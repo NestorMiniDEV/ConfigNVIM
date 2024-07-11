@@ -66,15 +66,25 @@ return require('packer').startup(function(use)
     "onsails/lspkind.nvim"
   } 
 
+  --tailwind-tools
+  
+  use "luckasRanarison/tailwind-tools.nvim"
+
+  --nvim colorizer
+
+  use "NvChad/nvim-colorizer.lua"
+
   --markview
 
   use "OXY2DEV/markview.nvim"
 
-  --copilot
+  --code_runner
 
-  use "zbirenbaum/copilot.lua"
+  use 'CRAG666/code_runner.nvim'
 
+  --live server
 
+  use "barrett-ruth/live-server.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

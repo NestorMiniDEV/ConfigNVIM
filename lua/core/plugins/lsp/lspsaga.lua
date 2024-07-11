@@ -4,7 +4,7 @@ if not saga_status then
 end
 
 saga.setup({
-    move_in_saga = {prev = "<C-k>", next = "<C-j>"},
+    move_in_saga = { prev = "<C-k>", next = "<C-j>"},
     finder_action_keys = {
         open = "<CR>",
     },
