@@ -4,6 +4,7 @@ require("core.plugins.markview")
 require("core.plugins.autopairs")
 require("core.plugins.lualine")
 require("core.plugins.live-server")
+require("core.plugins.code_runner")
 
 --css
 
