@@ -43,6 +43,10 @@ return require('packer').startup(function(use)
   use "windwp/nvim-autopairs"
   use "windwp/nvim-ts-autotag"
 
+  --indent-blankline
+  
+  use "lukas-reineke/indent-blankline.nvim"
+
   --completions
   use "hrsh7th/nvim-cmp"
   use "hrsh7th/cmp-buffer"
