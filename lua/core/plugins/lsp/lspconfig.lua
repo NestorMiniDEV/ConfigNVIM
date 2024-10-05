@@ -30,7 +30,7 @@ keymap.set("n", "]d", "<cmd>Lspsaga diagnostic_jump_next<CR>", opts)
 keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts)
 keymap.set("n", "K", "<cmd>LSoutLineToggle<CR>", opts)
 
-if client.name == "tsserver" then
+if client.name == "ts_ls" then
     keymap.set("n", "<leader>rf", ":TypescriptRenameFile<CR>")
 end
 
@@ -59,7 +59,7 @@ lspconfig.jdtls.setup({
     on_attach = on_attach
 })
 
-lspconfig.tsserver.setup({
+lspconfig.ts_ls.setup({
     capabilities = capabilities,
     on_attach = on_attach
 })
@@ -70,6 +70,26 @@ lspconfig.pylyzer.setup({
 })
 
 lspconfig.tailwindcss.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+})
+
+lspconfig.jsonls.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+})
+
+lspconfig.lua_ls.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+})
+
+lspconfig.phpactor.setup({
+    on_attach = on_attach,
+    capabilities = capabilities,
+})
+
+lspconfig.remark_ls.setup({
     on_attach = on_attach,
     capabilities = capabilities,
 })

@@ -6,6 +6,7 @@ require("core.plugins.lualine")
 require("core.plugins.live-server")
 require("core.plugins.code_runner")
 require("core.plugins.ibl")
+require("core.plugins.transparent")
 
 --css
 

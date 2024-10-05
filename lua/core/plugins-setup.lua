@@ -18,9 +18,12 @@ return require('packer').startup(function(use)
   -- use 'foo2/bar2.nvim'
 
   -- themes
-  use 'folke/tokyonight.nvim'
-  vim.cmd[[ set background=dark ]]
-  vim.cmd[[colorscheme tokyonight-night ]]
+  use "olimorris/onedarkpro.nvim"
+  use 'Mofiqul/vscode.nvim'
+  use "folke/tokyonight.nvim"
+  --vim.cmd[[ set background=dark ]]
+  vim.cmd[[colorscheme onedark]]
+  use "xiyaowong/transparent.nvim"
 
   -- lua-line theme
   use "nvim-lualine/lualine.nvim"
@@ -89,6 +92,9 @@ return require('packer').startup(function(use)
   --live server
 
   use "barrett-ruth/live-server.nvim"
+
+  --tabs nvim
+  use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

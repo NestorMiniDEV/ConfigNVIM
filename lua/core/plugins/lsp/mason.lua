@@ -14,9 +14,11 @@ mason_lspconfig.setup({
     ensure_installed = {
         "cssls",
         "html",
-        "jdtls",
-        "tsserver",
+        "ts_ls",
         "pylyzer",
-        "lua_ls"
+        "lua_ls",
+        "jsonls",
+        "phpactor",
+        "remark_ls",
     }
 })
