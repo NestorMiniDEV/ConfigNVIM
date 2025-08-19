@@ -1,5 +1,5 @@
 -- nvim v0.8.0
---
+
 -- it's necessary install first lazygit in the terminal (brew, pacman, etc).
 return {
     "kdheepak/lazygit.nvim",

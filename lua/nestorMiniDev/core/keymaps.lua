@@ -13,8 +13,13 @@ keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" })
 -- Splits
 keymap.set("n", "<leader>u", "<C-w>v", { desc = "Split window vertically" })
 keymap.set("n", "<leader>i", "<C-w>s", { desc = "Split window horizontally" })
-keymap.set("n", "<leader>se", "<C-w>-", { desc = "Make splits equal size" })
-keymap.set("n", "<leader>q", "<cmd>close<CR>", { desc = "Split window vertically" })
+keymap.set("n", "<leader>s-", "<C-w>-", { desc = "Decrement height split" })
+keymap.set("n", "<leader>s+", "<C-w>+", { desc = "Increment height split" })
+keymap.set("n", "<leader>se", "<C-w>>", { desc = "Increment wide split" })
+keymap.set("n", "<leader>sd", "<C-w><", { desc = "Decrement wide split" })
+
+keymap.set("n", "<leader>q", "<cmd>close<CR>", { desc = "Close split" })
+
 
 -- Tabs
 keymap.set("n", "<leader>tn", "<cmd>tabnew<CR>", { desc = "Open new tab" })

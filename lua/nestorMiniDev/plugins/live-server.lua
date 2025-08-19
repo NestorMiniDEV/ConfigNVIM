@@ -1,3 +1,5 @@
+-- first instal liveserver with npm
+
 return {
   'barrett-ruth/live-server.nvim',
   build = 'pnpm add -g live-server',
